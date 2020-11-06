@@ -6,7 +6,13 @@
 ## Run project
 To run project, clone repository, and use
 
-write in bash linux
+Initially use command
+
+```
+npm install
+```
+
+then write in bash linux
 
 ```
 export SASS_PATH=./node_modules
@@ -18,7 +24,7 @@ or in cmd Windows
 SET SASS_PATH=.\node_modules
 ```
 
-
+and then use following command
 
 ```
 npm start
