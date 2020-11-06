@@ -1,0 +1,43 @@
+@import "@material/button/mixins";
+
+$black_ink: #000000;
+
+$dark_red_container: #8B0000;
+
+$breakpoint-desktop: 1353px;
+
+@media (min-width: $breakpoint-desktop) {
+
+  .button-alternate {
+    @include mdc-button-container-fill-color($dark_red_container);
+    @include mdc-button-ink-color($black_ink);
+    height: 54%;
+    margin-left: 220px;
+  }
+
+}
+
+$breakpoint-mobile-min: 375px;
+$breakpoint-mobile-max: 475px;
+
+@media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
+
+  .button-alternate {
+    @include mdc-button-container-fill-color($dark_red_container);
+    @include mdc-button-ink-color($black_ink);
+    height: 5vh;
+  }
+}
+
+
+$breakpoint-tablet-min: 767px;
+$breakpoint-tablet-max: 800px;
+
+@media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+  .button-alternate {
+    @include mdc-button-container-fill-color($dark_red_container);
+    @include mdc-button-ink-color($black_ink);
+    height: 6.5vh;
+    width: 30vw;
+  }
+}

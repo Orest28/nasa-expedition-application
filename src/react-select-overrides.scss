@@ -1,0 +1,52 @@
+@import "@material/select/mixins";
+
+$width: 250px;
+
+.rovers-filter {
+    width: 200px;
+    margin-left: 1%;
+}
+
+.camera-filter {
+    width: 200px;
+    margin-left: 45%;
+}
+
+
+@media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
+
+    .rovers-filter {
+        width: 70vw;
+        margin-left: 0;
+    }
+
+    .camera-filter {
+        width: 70vw;
+        margin-left: 0;
+    }
+
+    .sol-filter {
+        width: 70vw;
+    }
+}
+
+
+$breakpoint-tablet-min: 767px;
+$breakpoint-tablet-max: 800px;
+
+@media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+
+    .rovers-filter {
+        width: 30vw;
+        margin-left: 0;
+    }
+
+    .camera-filter {
+        width: 30vw;
+        margin-left: 0;
+    }
+
+    .sol-filter {
+        width: 30vw;
+    }
+}
